@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Binomialkoeffizient</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="binomialkoeffizient.js"></script>
+    </head>
+    <body onload="initBinomialCalculator()">
+        <div id="main_container">
+            <div id="description">
+                <h1>Willkommen beim Binomialkoeffizient-Rechner</h1>
+                <h2>Geben Sie einen Wert für n und k ein</h2>
+            </div>
+            <div id="input_container">
+                <div class="leftTab">
+                    <label>n: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="number" id="input_n" min="0" value="49">
+                </div>
+
+                <div class=leftTab>
+                    <label>k: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="number" id="input_k" min="0" value="6">
+                </div>
+            </div>
+            <div id="calc_button">
+                <input type="button" id="calculate_button" value="Berechne">
+            </div>
+
+            <div id="output_container">
+                    <div id="result">Ergebnis: </div>
+            </div>
+        </div>        
+    </body>
+</html>

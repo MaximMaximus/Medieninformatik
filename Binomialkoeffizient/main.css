@@ -1,0 +1,96 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+@font-face {
+    font-family: Verdana, "Lucida Sans Unicode", sans-serif;
+}
+
+body {
+    background-color: #9BD770;
+    font-family: Verdana, "Lucida Sans Unicode", sans-serif;
+    user-select: none;
+}
+
+#main_container {
+    background-color: #EBF7E3;
+    border-radius: 4px;
+    margin: 100px auto;
+    width: 75%;
+    max-width: 900px;
+    padding: 10px;    
+    color: #1B3409;
+}
+
+#description h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #1B3409;
+}
+
+#description h2 {
+    text-align: center;
+    font-size: 22px;
+    color: #1B3409;
+}
+
+#input_container {
+    text-align: center;
+    font-weight: bold;
+}
+
+.leftTab {
+    display: inline-block;
+    text-align: right;
+    width: 35%;
+    font-size: 18px;
+    color: #1B3409;
+}
+
+.rightTab {
+    display: inline-block;
+    text-align: left;
+    width: 45%;
+    color: #1B3409;
+}
+
+#input_n, #input_k {
+    height: 20px;
+    width: 50px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+    text-align: center;
+}
+
+#calc_button {
+    text-align: center;
+}
+
+#calculate_button {
+    background-color: #559E54;
+    align-content: center;
+    border-radius: 4px;
+    color: #EBF7E3;
+    font-size: 1em;
+    height: 40px;
+    width: 96px;
+    margin: 10px;
+    border: 0px solid;
+}
+
+#output_container {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1B3409;
+    margin-bottom: 10px;
+}
