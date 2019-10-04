@@ -1,0 +1,30 @@
+@font-face {
+    font-family: Roboto Condensed Light;
+    src: url("../fonts/RobotoCondensed-Light.ttf");
+}
+
+h1 {
+    font-family: "Roboto Condensed Light";
+}
+
+#footer {
+    font-family: "Roboto Condensed Light";
+    font-style: italic;
+}
+
+table {
+    font-family: sans-serif;
+}
+
+th, td {
+    border: 1px solid white;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+tr.odd {
+    background-color: #EEE;
+}
