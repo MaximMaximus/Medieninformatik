@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Roboto Condensed Light;
+    src: url("../fonts/RobotoCondensed-Light.ttf");
+}
+
+body {
+    font-family: "Roboto Condensed Light";
+    background-color: #f0f0f0;
+}
+
+h1 {
+    background-color: #c2185b;
+    color: white;
+    padding: 20px 30px 80px 30px;
+}
+
+#copyright {
+    background-color: #c2185b;
+    color: white;
+    padding: 5px 10px 5px 10px;
+}
+
+img {
+    border-radius: 50%;
+    width: 100px;
+    margin: auto;
+}
+
+a:hover {
+    color: blue;
+}
+
+span {
+    color: red;
+}
+
+div {
+    height: 100px;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    position: relative;
+}
+
+#rect {
+    animation-name: rainbow;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rainbow {
+    0% {
+        left: 100%;
+    }
+    50% {
+        left: 70%;
+    }
+    100% {
+        left: 0%;
+    }
+}
