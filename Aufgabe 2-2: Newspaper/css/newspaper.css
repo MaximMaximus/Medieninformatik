@@ -1,0 +1,61 @@
+/* font configurations */
+@font-face {
+    font-family: Roboto Condensed Light;
+    src: url("../fonts/RobotoCondensed-Light.ttf"); 
+}
+
+/* Basic Styles */
+body {
+    font-family: 'Roboto Condensed Light';
+    user-select: none;
+}
+
+#main_content {
+    margin: auto;
+    padding: 10px;
+    width: 900px;
+    background: white;
+}
+
+#header {
+    border-bottom: 1px solid black;
+}
+
+.panel {
+    overflow: hidden; 
+}
+
+.article {
+    overflow: hidden;
+}
+
+.article h2 {
+    margin-bottom: 5px;
+}
+
+.article img {
+    float: left;
+    margin-right: 10px;
+}
+
+.column {
+    float: left;
+    margin: 10px;
+}
+
+.column h3 {
+    margin-bottom: 5px;
+}
+
+.narrow {
+    width: 30%;
+}
+
+.wide {
+    width: 45%;
+}
+
+#footer {
+    margin: auto;
+    width: 300px;
+}
