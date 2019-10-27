@@ -16,6 +16,7 @@ body {
   background-color: #c2185b;
   color: white;
   padding: 20px 30px 80px 30px;
+  margin: 0px;
 }
 
 #hobbies {
@@ -52,6 +53,7 @@ body {
 #footer {
   background-color: #c2185b;
   color: white;
+  margin: 0px;
   padding: 5px 10px 5px 10px;
   clear: both;
 }
@@ -64,7 +66,9 @@ body {
   #header {
     text-align: center;
     width: 100%;
-    padding: 20px 20px 20px 20px;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
   }
 
   #hobbies,
@@ -80,6 +84,7 @@ body {
     width: 100%;
     text-align: center;
     margin: 10px;
+    padding: 10px;
   }
 }
 

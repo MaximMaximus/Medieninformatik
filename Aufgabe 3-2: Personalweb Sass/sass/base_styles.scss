@@ -12,6 +12,7 @@ body {
     background-color: $header_footer_color;
     color: $text_color;
     padding: 20px 30px 80px 30px;
+    margin: 0px;
 }
 
 #hobbies {
@@ -53,6 +54,7 @@ body {
 #footer {
     background-color: $header_footer_color;
     color: $text_color;
+    margin: 0px;
     padding: 5px 10px 5px 10px;
     clear: both;
 }
