@@ -18,3 +18,5 @@
 [Aufgabe 3-3: Newspaper Bootstrap](https://maximmaximus.github.io/Medieninformatik/Aufgaben%203-3:%20NewspaperBootstrap/)
 
 [Aufgabe 4: Pig-Latin Generator](https://maximmaximus.github.io/Medieninformatik/Aufgabe%204:%20Pig-Latin%20Generator/)
+
+[Aufgabe 5: BMI Calculator](https://maximmaximus.github.io/Medieninformatik/Aufgabe%205:%20BMI%20Calculator/)
