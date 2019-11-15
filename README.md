@@ -20,3 +20,5 @@
 [Aufgabe 4: Pig-Latin Generator](https://maximmaximus.github.io/Medieninformatik/Aufgabe%204:%20Pig-Latin%20Generator/)
 
 [Aufgabe 5: BMI Calculator](https://maximmaximus.github.io/Medieninformatik/Aufgabe%205:%20BMI%20Calculator/)
+
+[Aufgabe 6-2: Employee JS](https://maximmaximus.github.io/Medieninformatik/Aufgabe%206-2:%20Employee%20JS/)
