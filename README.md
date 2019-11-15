@@ -3,9 +3,9 @@
 # Projektliste
 ## Meine Projekte
 
-[Binomialkoeffizient-Rechner](https://maximmaximus.github.io/Medieninformatik/Shoppinglist/)
+[Binomialkoeffizient-Rechner](https://maximmaximus.github.io/Medieninformatik/Binomialkoeffizient/)
 
-[Shoppinglist](https://maximmaximus.github.io/Medieninformatik/Binomialkoeffizient/)
+[Shoppinglist](https://maximmaximus.github.io/Medieninformatik/Shoppinglist/)
 
 ## Kurs Projekte
 
