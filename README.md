@@ -22,3 +22,5 @@
 [Aufgabe 5: BMI Calculator](https://maximmaximus.github.io/Medieninformatik/Aufgabe%205:%20BMI%20Calculator/)
 
 [Aufgabe 6-2: Employee JS](https://maximmaximus.github.io/Medieninformatik/Aufgabe%206-2:%20Employee%20JS/)
+
+[Aufgabe 6-3: Employee](https://maximmaximus.github.io/Medieninformatik/Aufgabe%206-3:%20Employee/)
