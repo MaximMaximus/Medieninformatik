@@ -1,0 +1,99 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    background-color: white;
+    padding: 3%;
+    user-select: none;
+}
+
+#main_content {
+    width: 600px;
+    margin: auto;
+    padding: 2%;
+    background-color: #1257D9;
+    border-radius: 25px;
+}
+
+#header {
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+#item_input {
+    background-color: #FFFFFF;
+    color: #0D2249;
+    font-size: 20px;
+    width: 100%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px;
+    box-sizing: border-box;
+    display: block;
+    border: solid 1px #0D2249;
+}
+
+button {
+    cursor: pointer;
+    background-color: #5E92F2;
+    color: #FFFFFF;
+    margin-top: auto;
+    padding: 10px;
+    border: solid 1px #FFFFFF;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+ul {
+    
+    list-style: none;
+    padding: 0px;
+    width: 100%;
+}
+
+li {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #0D2249;
+    font-size: 20px;
+    font-weight: 400;
+    border: solid 1px #0D2249;
+    padding: 10px;
+    margin: auto;
+    margin: 10px 0px 10px 0px;
+}
+
+@media only screen and (max-width: 650px) {
+    body {
+        padding: 0;
+    }
+
+    #main_content {
+        width: auto;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    #header {
+        width: auto;
+        text-align: center;
+    }
+
+    #item_input {
+        width: 100%;
+        margin: 0;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    ul {
+        width: auto;
+        text-align: center;
+    }
+
+
+}
