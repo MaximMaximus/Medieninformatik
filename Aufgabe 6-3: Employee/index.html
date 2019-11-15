@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>EmployeeDB</title>
+    <link rel="stylesheet" href="res/css/styles-light.css">
+    <link rel="stylesheet" href="res/css/app.css">
+</head>
+
+<body>
+    <header>
+        <h1>EmployeeDB</h1>
+        <ul id="menu">
+            <a href="#"><li class="add-employee">Add Employee</li></a>
+        </ul>
+    </header>
+    <div class="decal"></div>
+    <content>
+        <h2>Current employees </h2>
+        <p>Name:</p>
+        <input type="text" id="employee_name_input">
+        <p>Email:</p>
+        <input type="text" id="employee_email_input">
+        <p>Room:</p>
+        <input type="text" id="employee_room_input">
+        <ul id="employees">
+        </ul>
+    </content>
+        
+    <script src="js/libs/mme-helper.min.js"></script>
+    <script src="js/src/EmployeeController.js"></script>
+    <script src="js/src/domain/Employee.js"></script>
+    <script src="js/src/EmployeeDatabase.js"></script>
+    <script>
+    employeeController.init();
+    </script>
+</body>
+
+</html>
