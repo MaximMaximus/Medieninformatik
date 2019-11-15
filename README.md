@@ -1,12 +1,14 @@
 # Medieninformatik
 
 # Projektliste
-##Meine Projekte
+## Meine Projekte
+
 [Binomialkoeffizient-Rechner](https://maximmaximus.github.io/Medieninformatik/Shoppinglist/)
 
 [Shoppinglist](https://maximmaximus.github.io/Medieninformatik/Binomialkoeffizient/)
 
-##Kurs Projekte
+## Kurs Projekte
+
 [Aufgabe 1+2: Personalweb](https://maximmaximus.github.io/Medieninformatik/Aufgabe%201%2B2:%20Personalweb/)
 
 [Aufgabe 3: Tabelle](https://maximmaximus.github.io/Medieninformatik/Aufgabe%203:%20Tabelle/)
