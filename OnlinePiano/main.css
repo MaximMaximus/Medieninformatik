@@ -210,7 +210,7 @@ header {
 
         @keyframes jump {
             0% {
-                bottom: 35%;
+                bottom: 25%;
                 left: 10%;
             }
 
