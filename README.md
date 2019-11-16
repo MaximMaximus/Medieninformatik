@@ -7,6 +7,8 @@
 
 [Shoppinglist](https://maximmaximus.github.io/Medieninformatik/Shoppinglist/)
 
+[Online Piano](https://maximmaximus.github.io/Medieninformatik/OnlinePiano/)
+
 ## Kurs Projekte
 
 [Aufgabe 1+2: Personalweb](https://maximmaximus.github.io/Medieninformatik/Aufgabe%201%2B2:%20Personalweb/)
