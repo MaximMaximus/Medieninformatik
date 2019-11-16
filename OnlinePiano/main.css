@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 3%;
+    background: lightblue;
+    user-select: none;
+}
+
+.app {
+    display: grid;
+    text-align: center;
+    width: 100%;
+    height: 90vh;
+    grid-template-rows: 10% auto 20%;
+    margin: auto;
+    background: white;
+    z-index: -1;
+}
+
+header {
+    background: white;
+    text-align: center;
+    font-size: 5vh;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-bottom: solid black;
+    z-index: 3;
+}
+
+.visual {
+    z-index: 2;
+}
+
+.pads {
+    align-content: end;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    border-bottom: solid black;
+    z-index: 3;
+    background-color: white;
+}
+
+.pads > div {
+    text-align: center;
+    margin: 5%;
+    height: 200px;
+    border: black solid;
+    cursor: pointer;
+}
+
+.pad1 {
+    background: #60d394;
+}
+
+.pad2 {
+    background: #d36060;
+}
+
+.pad3 {
+    background: #c060d3;
+}
+
+.pad4 {
+    background: #d3d160;
+}
+
+.pad5 {
+    background: #6860d3;
+}
+
+.pad6 {
+    background: #60b2d3;
+}
+
+.pad7 {
+    background: #d36060;
+}
+
+.keys {
+    position: relative;
+    text-align: center;
+    top: 70%;
+    font-size: 3vh;
+    font-weight: 700;
+}
+
+.flash {
+    animation: flash 500ms ease;
+}
+
+.visual > div {
+    position: absolute;
+    height: 10%;
+    width: 80%;
+    border-radius: 10px;
+    bottom: 20px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+@keyframes flash {
+    0% {
+        color: white;
+    }
+
+    50% {
+        color: red;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 30%;
+        left: 10%;
+    }
+
+    50% {
+        bottom: 50%;
+        left: 10%;
+
+    }
+
+    100% {
+        bottom: 80%;
+        left: 10%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    @media screen and (orientation:portrait) {
+
+        body {
+            padding: 0;
+        }
+
+        .app {
+            display: grid;
+            text-align: center;
+            width: auto;
+            height: 100vh;
+            grid-template-rows: auto auto;
+            margin: 0;
+        }
+
+        header {
+            background: white;
+            text-align: center;
+            font-size: 5vh;
+            font-weight: 700;
+            padding: 20px;
+            border-bottom: solid black;
+        }
+
+        .visual {
+            display: none;
+        }
+
+        .pads {
+            display: grid;
+            grid-template-columns: auto;
+            margin: 0;
+            padding: 0 0 10px 10px;
+            align-content: end;
+        }
+
+        .pads > div {
+            text-align: center;
+            padding: 10px 0px 10px 0px;
+            margin: 2px 10px 2px 2px;
+            height: 11vh;
+            width: auto;
+        }
+
+        .keys {
+            top: 0;
+            right: 40%;
+            font-size: 5vh;
+            font-weight: 700;
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    @media screen and (orientation:landscape) {
+        header {
+            font-size: 7vh;
+            font-weight: 700;
+            padding-bottom: 40px;
+        }
+
+        .pads > div {
+            height: 100px;
+        }
+
+        .keys {
+            top: 50%;
+            font-size: 7vh;
+            font-weight: 700;
+        }
+
+        @keyframes jump {
+            0% {
+                bottom: 35%;
+                left: 10%;
+            }
+
+            50% {
+                bottom: 50%;
+                left: 10%;
+
+            }
+
+            100% {
+                bottom: 80%;
+                left: 10%;
+            }
+        }
+
+    }
+}
