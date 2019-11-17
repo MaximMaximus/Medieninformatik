@@ -90,6 +90,11 @@ header {
     font-weight: 700;
 }
 
+.keyHide {
+    font-size: 2vh;
+    font-weight: 700;
+}
+
 .flash {
     animation: flash 500ms ease;
 }
@@ -187,6 +192,10 @@ header {
             font-size: 5vh;
             font-weight: 700;
         }
+
+        .keyHide {
+            display: none;
+        }
     }
 }
 
@@ -206,6 +215,10 @@ header {
             top: 50%;
             font-size: 7vh;
             font-weight: 700;
+        }
+
+        .keyHide {
+            display: none;
         }
 
         @keyframes jump {
