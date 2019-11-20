@@ -1,0 +1,31 @@
+extends system.pug
+
+block content
+    div(id="header")
+        h1 OTH Regensburg
+        
+    h1 Studieren an der OTH
+    
+    div(id="intro")
+        p Die Ostbayerische Technische Hochschule bietet Ihnen in den Bereichen Technik, Wirtschaft und Sozialwesen zahlreiche Studiengänge an.
+        
+        p Warum hier studieren?
+        
+        ul
+            li Spannende Studiengänge
+            li Tolle Leute
+            li Nette Studienkollegen
+            li Super Stadt
+            li Und vieles mehr...
+            
+    div(id="register")
+        h2 Hole Dir hier die News zur OTH
+        form(id="mail_form", action="welcome", method="post")
+            div
+                input(type="email", name="email", id="mail")
+            div(class="button")
+                button(type="submit") Anmelden
+                
+        
+    div(id="footer")
+        p We always need a footer...

@@ -1,0 +1,46 @@
+@font-face {
+    font-family: Roboto Condensed Light;
+    src: url("../fonts/RobotoCondensed-Light.ttf"); 
+}
+
+/* Basic Styles */
+body {
+    font-family: 'Roboto Condensed Light', Helvetica, Arial, sans-serif;
+}
+
+/* Header */
+#header {
+    background: #4285f4;
+}
+
+#header h1 {
+        margin: 0 0 0 0;
+        color: #ffffff;
+}
+
+/* Intro */
+#intro {
+    float: left;
+    font-weight: 200;
+    width: 45%;
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+/* Register */
+#register {
+    float: right;
+    width: 45%;
+    font-weight: 300;
+    font-size: 18px;
+    background-color: #bababa;
+    padding: 20px;
+}
+
+/* Footer */
+#footer {
+    clear:both;
+    color: #ffffff;
+    background: #3367D6;
+    text-align:center;
+}
