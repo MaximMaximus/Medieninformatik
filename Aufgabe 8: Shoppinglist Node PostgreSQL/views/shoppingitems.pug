@@ -1,0 +1,54 @@
+extends layout.pug
+
+block content
+
+  h1 Meine Einkaufsliste
+  form(method="post" action="/shoppingitems")
+    div(class="form-group")
+        input(type="text" class="form-control" name="shoppingItem")
+    div(class="form-group float-left")
+        button(type="submit" class="btn btn-primary" action="/shoppinglist" method="post") Hinzufügen
+  form(display="inline" class="float-right" action="/shoppingitems" method="post")
+      input(type="hidden" name="delete_all" value="shoppingItems")
+      button(class="btn btn-danger") Liste leeren
+  br
+
+  ul(class="list-group" style="clear: both")
+    each shoppingItem in shoppingItems
+      if !shoppingItem.bought
+        li(class="list-group-item")= shoppingItem.title
+          span
+              form(display="inline" class="float-right" action="/shoppingitems" method="POST")
+                  input(type="hidden" name="delete_item_id" value=shoppingItem.id)
+                  button(class="btn btn-danger mx-2") Entfernen
+
+              form(display="inline" class="float-right" action="/shoppingitems" method="POST")
+                  input(type="hidden" name="shopping_item_buy_id" value=shoppingItem.id)
+                  button(class="btn btn-success mx-2") Kaufen
+
+              form(display="inline" class="float-right" action="/shoppingitems" method="POST")
+                  input(type="hidden" name="inc_Id" value=shoppingItem.id)
+                  input(type="hidden" name="amount_inc" value=shoppingItem.amount)
+                  button(class="btn btn-primary mx-2") +
+
+              form(display="inline" class="float-right" action="/shoppingitems" method="POST")
+                  input(type="hidden" name="dec_Id" value=shoppingItem.id)
+                  input(type="hidden" name="amount_dec" value=shoppingItem.amount)
+                  button(class="btn btn-warning mx-2") -
+
+              div(class="float-right px-2" style="border: 1px solid black")
+                  p #{shoppingItem.amount}
+              div(class="float-right px-2")
+                  p Menge:
+
+      if shoppingItem.bought
+        li(class="list-group-item")
+          span
+            p
+              s  #{shoppingItem.title}
+              |  #{shoppingItem.amount}
+              |  Stück
+              |  gekauft!
+
+    else
+      li(class="list-group-item") Keine Einträge vorhanden
