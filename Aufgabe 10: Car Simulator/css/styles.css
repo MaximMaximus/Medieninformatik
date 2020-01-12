@@ -1,0 +1,28 @@
+#canvas {
+    border: 1px solid black;
+}
+
+@font-face {
+  font-family: Roboto Condensed Light;
+  src: url("../fonts/RobotoCondensed-Light.ttf");
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    background: rgba(30, 30, 30, 1);
+    font-family: "Roboto Condensed Light";
+    color: rgba(30, 30, 30, 1);
+}
+
+header {
+    width: 600px;
+    height: 50px;
+    background: rgba(30, 30, 30, 1);
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    color: rgba(240, 240, 240, 1);
+}
+
+
