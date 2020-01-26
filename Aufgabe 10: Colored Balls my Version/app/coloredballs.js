@@ -45,14 +45,14 @@ var coloredBalls = (function () {
         sizeSlider.oninput = function () {
             maxSize = this.value;
             sizeOutput.innerHTML = "Max Size: " + this.value;
-            removeBalls();
+            //removeBalls();
         }
         var speedSlider = document.getElementById("speedSlider");
         var speedOutput = document.getElementById("speedValue");
         speedSlider.oninput = function () {
             growSpeed = this.value / 10;
             speedOutput.innerHTML = "Max Speed: " + this.value;
-            removeBalls();
+            //removeBalls();
         }
     }
 
