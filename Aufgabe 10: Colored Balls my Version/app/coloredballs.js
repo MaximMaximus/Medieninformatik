@@ -6,12 +6,15 @@ var coloredBalls = (function () {
 
     var mousePos;
     var drawOn;
+    var timer;
 
     var balls = [];
     var filledBalls = true;
     var deleteBalls = true;
 
-    var timer;
+    var maxSize = 100;
+    var growSpeed = 0.5;
+
 
     function setupButtons() {
         var fillButton = document.getElementById("fillButton");
@@ -36,8 +39,27 @@ var coloredBalls = (function () {
         });
     }
 
+    function setupSlider() {
+        var sizeSlider = document.getElementById("maxSizeSlider");
+        var sizeOutput = document.getElementById("sizeSliderValue");
+        sizeSlider.oninput = function () {
+            maxSize = this.value;
+            sizeOutput.innerHTML = "Max Size: " + this.value;
+            removeBalls();
+        }
+        var speedSlider = document.getElementById("speedSlider");
+        var speedOutput = document.getElementById("speedValue");
+        speedSlider.oninput = function () {
+            growSpeed = this.value / 10;
+            speedOutput.innerHTML = "Max Speed: " + this.value;
+            removeBalls();
+        }
+    }
+
+
     function init(canvas) {
         setupButtons();
+        setupSlider();
         context = canvas.getContext('2d');
         canvas.addEventListener("click", function (evt) {
             mousePos = getMousePos(canvas, evt);
@@ -64,7 +86,7 @@ var coloredBalls = (function () {
     }
 
     function createBall() {
-        var ball = new Ball(mousePos.x, mousePos.y, context);
+        var ball = new Ball(mousePos.x, mousePos.y, context, maxSize, growSpeed);
         balls.push(ball);
     }
 
@@ -94,6 +116,10 @@ var coloredBalls = (function () {
                 balls[i].fillBall = filledBalls;
             }
         }
+    }
+
+    function removeBalls() {
+        balls = [];
     }
 
     function drawBackground() {

@@ -1,11 +1,11 @@
 class Ball {
-  constructor(xPos, yPos, context) {
+  constructor(xPos, yPos, context, maxSize, growSpeed) {
     this.context = context;
     this.xPos = xPos;
     this.yPos = yPos;
-    this.maxSize = (Math.random() * 100);
+    this.maxSize = (Math.random() * maxSize);
     this.ballSize = 0;
-    this.growSpeed = 0.5; // (Math.random() * (10 + 1))/10;
+    this.growSpeed = growSpeed;
     this.color = this.randomColor();
     this.delete = false;
     this.fillBall = true;
@@ -16,7 +16,7 @@ class Ball {
     this.context.strokeStyle = "blue";
     this.context.beginPath();
     this.context.arc(this.xPos, this.yPos,
-      this.ballSize / 2, 0, 2 * Math.PI);
+      Math.abs(this.ballSize / 2), 0, 2 * Math.PI);
     this.context.stroke();
     if (this.fillBall === true) {
       this.context.fill();
