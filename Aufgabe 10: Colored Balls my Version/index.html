@@ -11,8 +11,15 @@
             color: #fff;
             text-align: center;
             font-family: sans-serif;
-            margin-top: 10px;
+            margin-top: 20px;
             user-select: none;
+        }
+
+        h2 {
+            margin: 10px;
+        }
+        p {
+            margin: 10px;
         }
 
         #mycanvas {
@@ -31,6 +38,7 @@
 
 <body onload="initBalls()">
     <h2>Colored balls</h2>
+    <p>Hold left mouse button to draw</p>
     <canvas id="mycanvas" width="700" height="700"></canvas>
     <div>
         <button id="fillButton">Fill Color: On</button>
