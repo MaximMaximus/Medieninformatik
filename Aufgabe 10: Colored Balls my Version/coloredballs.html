@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Colored balls</title>
+
+    <style type="text/css">
+        body {
+            background: #202028;
+            color: #fff;
+            text-align: center;
+            font-family: sans-serif;
+            margin-top: 10px;
+            user-select: none;
+        }
+
+        #mycanvas {
+            float: none;
+            overflow: hidden;
+        }
+
+        button {
+            margin: 10px;
+            height: 50px;
+            width: 200px;
+        }
+    </style>
+
+</head>
+
+<body onload="initBalls()">
+    <h2>Colored balls</h2>
+    <canvas id="mycanvas" width="700" height="700"></canvas>
+    <div>
+        <button id="fillButton">Fill Color: On</button>
+        <button id="deleteBallsButton">Delete Balls: On</button>
+    </div>
+    <script src="app/ballClass.js"></script>
+    <script src="app/initBalls.js"></script>
+    <script src="app/coloredballs.js"></script>
+</body>
+
+</html>
