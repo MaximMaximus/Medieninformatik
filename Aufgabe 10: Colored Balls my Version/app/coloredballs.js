@@ -1,8 +1,8 @@
 var coloredBalls = (function () {
     var context;
 
-    var CANVAS_WIDTH = 700;
-    var CANVAS_HEIGHT = 700;
+    var CANVAS_WIDTH = 1200;
+    var CANVAS_HEIGHT = 600;
 
     var mousePos;
     var drawOn;
@@ -10,7 +10,7 @@ var coloredBalls = (function () {
 
     var balls = [];
     var filledBalls = true;
-    var deleteBalls = true;
+    var deleteBalls = false;
 
     var maxSize = 100;
     var growSpeed = 0.5;
@@ -38,9 +38,17 @@ var coloredBalls = (function () {
             }
         });
         var resetButton = document.getElementById("resetButton");
-        resetButton.addEventListener("click", function() {
+        resetButton.addEventListener("click", function () {
             //location.reload();
             removeBalls();
+        });
+        var saveButton = document.getElementById("saveButton");
+        saveButton.addEventListener("click", function () {
+            save();
+        });
+        var loadButton = document.getElementById("loadButton");
+        loadButton.addEventListener("click", function () {
+            load();
         });
     }
 
@@ -50,14 +58,14 @@ var coloredBalls = (function () {
         sizeSlider.oninput = function () {
             maxSize = this.value;
             sizeOutput.innerHTML = "Max Size: " + this.value;
-         //   removeBalls();
+            //   removeBalls();
         }
         var speedSlider = document.getElementById("speedSlider");
         var speedOutput = document.getElementById("speedValue");
         speedSlider.oninput = function () {
             growSpeed = this.value / 10;
             speedOutput.innerHTML = "Max Speed: " + this.value;
-        //    removeBalls();
+            //    removeBalls();
         }
     }
 
@@ -139,8 +147,36 @@ var coloredBalls = (function () {
         context.lineWidth = 1;
     }
 
+    function save() {
+        if (balls.length < 1) {
+            alert("Nothing to save!");
+        } else if (deleteBalls == true) {
+            alert("Delete Balls is activated!")
+        } else {
+            var myJSON = JSON.stringify(balls);
+            localStorage.setItem("saveBalls", myJSON);
+            //console.log(myJSON);
+        }
+    }
+
+    function load() {
+        removeBalls();
+        var loadFile = localStorage.getItem("saveBalls");
+        //console.log(loadFile);
+        var output = JSON.parse(loadFile);
+        for (var i = 0; i < output.length; i++) {
+            var ball = new Ball(output[i].xPos, output[i].yPos, context, output[i].maxSize, output[i].growSpeed);
+            balls.push(ball);
+        }
+        //balls = [];
+        //balls = JSON.parse(loadFile);
+        //console.log(balls);
+    }
+
     return {
-        init: init
+        init: init,
+        save: save,
+        load: load
     }
 
 })();

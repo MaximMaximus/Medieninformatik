@@ -20,7 +20,7 @@
         }
 
         p {
-            margin: 10px;
+            margin: 5px;
         }
 
         #mycanvas {
@@ -32,6 +32,12 @@
             margin: 5px 5px 10px 5px;
             height: 30px;
             width: 200px;
+        }
+
+        .save {
+            margin: 5px 5px 10px 5px;
+            height: 20px;
+            width: 100px;
         }
 
         .slidercontainer {
@@ -66,7 +72,8 @@
             cursor: pointer;
         }
 
-        #sizeSliderValue, #speedValue {
+        #sizeSliderValue,
+        #speedValue {
             margin: 5px;
         }
     </style>
@@ -74,12 +81,20 @@
 </head>
 
 <body onload="initBalls()">
-    <h2>Colored balls</h2>
-    <p>Hold left mouse button to draw</p>
-    <canvas id="mycanvas" width="700" height="700"></canvas>
+    <div class="row">
+        <h2>Colored balls</h2>
+        <p>Hold left mouse button to draw</p>
+    </div>
+    <div>
+        <button class="save" id="saveButton">Save</button>
+        <button class="save" id="loadButton">Load</button>
+    </div>
+    <div>
+        <canvas id="mycanvas" width="1200" height="600"></canvas>
+    </div>
     <div>
         <button id="fillButton">Fill Color: On</button>
-        <button id="deleteBallsButton">Delete Balls: On</button>
+        <button id="deleteBallsButton">Delete Balls: Off</button>
         <button id="resetButton">Reset</button>
     </div>
     <div class="sliderContainer">
